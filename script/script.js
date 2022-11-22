@@ -3,9 +3,10 @@ function relogio() {
     let dMinuto = window.document.getElementById("minuto")
     let dSegundo = window.document.getElementById("segundo")
     
-    
     let dias = window.document.getElementById("dias")
     
+    
+
     let agora = new Date() 
     let horas = agora.getHours()
     let minutos = agora.getMinutes()
@@ -19,6 +20,7 @@ function relogio() {
 
     if(horas < 10) {
         horas = "0" + horas
+        document.getElementById('imagem').src=""
     }
 
     if(minutos < 10) {
@@ -93,16 +95,6 @@ function relogio() {
             break
         default:
             mes = "Dezembro"
-    }
-
-    if(horas > 5 && horas <= 12) {
-        document.getElementById("imagem").src  = "https://img.elo7.com.br/product/zoom/27026C7/asdasd-asdad.jpg"
-    } else if(horas > 12 && horas <= 17) {
-        document.getElementById("imagem").src  = "https://img.elo7.com.br/product/zoom/27026C7/asdasd-asdad.jpg"
-    } else if(horas > 17 && horas <= 21) {
-        document.getElementById("imagem").src  = "https://img.elo7.com.br/product/zoom/27026C7/asdasd-asdad.jpg"
-    } else {
-        document.getElementById("imagem").src  = "https://img.elo7.com.br/product/zoom/27026C7/asdasd-asdad.jpg"
     }
 
     dias.innerHTML = `<p id="dias">${diaSem}, ${dia} de ${mes} de ${agora.getFullYear()}</p>`
