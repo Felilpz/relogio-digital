@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-weight: bolder;
+}
+
+body {
+    background-image: linear-gradient(to left, #f2a772, #e8d890, #e2edb7, #f5d393);
+}
+
+.font {
+    font-size: 0.9em;
+}
+
+.tempo {
+    font-size: 4em;
+}
+
+.container {
+    text-align: center;
+    padding-top: 70px;
+}
+
+#hora, #minuto, #segundo {
+    display: inline-block;
+    width: 200px;
+    
+    margin: 10px;
+
+    border-radius: 10px;
+
+    background-color: orange;
+}
+
+#relogio {
+    margin-top: 20px;
+}
+
+#imagem {
+    width: 75%;
+    height: 300px;
+    display: block;
+    margin: auto;
+
+    border-radius: 20px;
+
+    border: 2px solid lightgoldenrodyellow;
+    background-color: black;
+    /*background-image: url(img/morning.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
