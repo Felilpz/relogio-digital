@@ -127,7 +127,7 @@ function relogio() {
         document.querySelector('img').style.boxShadow = "0px 0px 29px 4px rgba(224,193,40,1)"
 
     } else if(horas > 17 && horas <= 19) {
-        imagem.innerHTML = `<img src="../script/img/evening.png">`
+        imagem.innerHTML = `<img src="/script/img/evening.png">`
 
         document.querySelector('.body').style.background = "linear-gradient(150deg, #F25C69, #593202, #F28705)"
         
