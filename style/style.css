@@ -10,6 +10,7 @@
 
 body {
     background-image: linear-gradient(to left, #f2a772, #e8d890, #e2edb7, #f5d393);
+    height: 100vh;
 }
 
 .font {
@@ -40,20 +41,18 @@ body {
     margin-top: 20px;
 }
 
-#imagem {
+#imagem > img {
     width: 75%;
-    height: 300px;
+    height: 200px;
     display: block;
     margin: auto;
 
     border-radius: 20px;
 
     border: 2px solid lightgoldenrodyellow;
-    background-color: black;
-    /*background-image: url(img/morning.png);*/
+    background-color: black;    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
 }
 
 #dias {

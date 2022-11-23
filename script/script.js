@@ -2,11 +2,11 @@ function relogio() {
     let dHora = window.document.getElementById("hora")
     let dMinuto = window.document.getElementById("minuto")
     let dSegundo = window.document.getElementById("segundo")
-    
+    let imagem = window.document.getElementById("imagem")
+    let body = window.document.getElementsByClassName('body')
+
     let dias = window.document.getElementById("dias")
     
-    
-
     let agora = new Date() 
     let horas = agora.getHours()
     let minutos = agora.getMinutes()
@@ -20,7 +20,6 @@ function relogio() {
 
     if(horas < 10) {
         horas = "0" + horas
-        document.getElementById('imagem').src=""
     }
 
     if(minutos < 10) {
@@ -95,6 +94,24 @@ function relogio() {
             break
         default:
             mes = "Dezembro"
+    }
+
+    if(horas > 5 && horas <= 12) {
+        imagem.innerHTML = `<img src="../script/img/evening.png">`
+        
+    } else if(horas > 12 && horas <= 17) {
+        imagem.innerHTML = `<img src="../script/img/evening.png">`
+    } else if(horas > 17 && horas <= 19) {
+        imagem.innerHTML = `<img src="../script/img/evening.png">`
+    } else {
+        imagem.innerHTML = `<img src="script/img/night.png">`
+
+        document.querySelector('.body').style.background = "linear-gradient(120deg, #000000, #304878)"
+
+        document.querySelector('#dias').style.color = "white"
+
+        document.querySelector('#hora, #minuto,  #segundo').style.backgroundColor = "#304878"
+        document.querySelector('#hora, #minuto, #segundo').style.color = "white"
     }
 
     dias.innerHTML = `<p id="dias">${diaSem}, ${dia} de ${mes} de ${agora.getFullYear()}</p>`
