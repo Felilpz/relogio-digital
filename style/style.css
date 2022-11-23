@@ -21,14 +21,18 @@ body {
     font-size: 4em;
 }
 
-.container {
+#container {
     text-align: center;
-    padding-top: 70px;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#hora, #minuto, #segundo {
+.hora, .minuto, .segundo {
     display: inline-block;
-    width: 200px;
+    width: 20%;
     
     margin: 10px;
 
@@ -41,21 +45,19 @@ body {
     margin-top: 20px;
 }
 
-#imagem > img {
+#imagem img {
     width: 75%;
-    height: 200px;
     display: block;
     margin: auto;
 
     border-radius: 20px;
 
-    border: 2px solid lightgoldenrodyellow;
     background-color: black;    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#dias {
+.dias {
     padding-top: 10px;
     font-size: 1.1em;
 }
