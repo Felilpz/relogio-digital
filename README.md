@@ -10,6 +10,12 @@ O projeto consiste em fazer uma tela que mostra em tempo real(inclusive rodando 
 
 Para fazer o projeto, precisei aprender a utilizar o *setInterval*, aprendi um pouco mais sobre elementos **DOM**. Mudando a *cor das letras, fundos, linear-gradients, box-shadow, IMAGEM*, com JavaScript
 
+<br>
+
+<div align="center">
+    <img src="style/imagem.png" width="67%">
+</div>
+
 <br><br>
 
 <h1 align="center">
