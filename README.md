@@ -4,7 +4,7 @@
 
 ## Sobre
 
-O projeto consiste em fazer uma tela que mostra em tempo real(inclusive rodando os segundos) a hora exata. Resovi aprimorar e adicionar Dia da semana, Dia do mês e ano.
+O projeto consiste em fazer uma tela que mostra em tempo real(inclusive rodando os segundos) a hora exata. Resolvi aprimorar e adicionar Dia da semana, Dia do mês e ano.
 
 ## DOM
 
