@@ -53,8 +53,10 @@ function relogio() {
             break
         case 5:
             diaSem = "Sexta-Feira"
-        default:
+            break
+        case 6:
             diaSem = "Sábado"
+            break
     }
 
     //mes
