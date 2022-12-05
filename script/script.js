@@ -7,7 +7,7 @@ function relogio() {
 
     let dias = window.document.querySelector(".dias")
     
-    let agora = new Date() 
+    let agora = new Date()
     let horas = agora.getHours()
     let minutos = agora.getMinutes()
     let segundos = agora.getSeconds()
